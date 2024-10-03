@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodCook | FeedBack</title>
+    <link rel="stylesheet" href="asset/feedback.css" />
+    <script src="asset/feedback.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">FoodCook | FeedBack 😎</div>
+      <div class="details">
+        <h4><a href="./index.html">Home</a></h4>
+      </div>
+    </header>
+    <main class="main">
+      <h4>FeedBack Form</h4>
+
+      <form name="feedback">
+        <div class="fullName">
+          <input
+            type="text"
+            name="fullName"
+            placeholder="Enter your fullname"
+            required
+          />
+        </div>
+        <div style="display: flex" id="input-category">
+          <div class="d-flex" value="true">
+            <input
+              type="radio"
+              name="type"
+              id="general-feedback"
+              value="general-feedback"
+            />
+            <label for="general-feedback">General Feedback</label>
+          </div>
+          <div class="d-flex">
+            <input
+              type="radio"
+              name="type"
+              id="technical-support"
+              value="technical-support"
+            />
+            <label for="technical-support">Technical Support</label>
+          </div>
+          <div class="d-flex">
+            <input
+              type="radio"
+              name="type"
+              id="contribution"
+              value="contribution"
+            />
+            <label for="contribution">Contribution</label>
+          </div>
+        </div>
+        <div>
+          <input
+            type="email"
+            name="email"
+            placeholder="you@awesome.com"
+            required
+          />
+        </div>
+        <div>
+          <textarea
+            name="desc"
+            placeholder="Enter your feedback briefly!"
+            rows="5"
+            required
+          ></textarea>
+        </div>
+        <div class="d-flex">
+          <div>
+            <label for="football">
+              <input
+                name="hobbies"
+                value="football"
+                id="football"
+                type="checkbox"
+              />
+              Football
+            </label>
+          </div>
+          <div>
+            <label for="music">
+              <input name="hobbies" value="music" id="music" type="checkbox" />
+              Music
+            </label>
+          </div>
+          <div>
+            <label for="cricket">
+              <input
+                name="hobbies"
+                value="cricket"
+                id="cricket"
+                type="checkbox"
+              />
+              Cricket
+            </label>
+          </div>
+        </div>
+        <div>
+          <label for="terms">
+            <input type="checkbox" name="terms" required />
+            I Accept Terms and Conditions
+          </label>
+        </div>
+        <div>
+          <button>Submit</button>
+        </div>
+
+        <div id="responce"></div>
+      </form>
+    </main>
+  </body>
+</html>

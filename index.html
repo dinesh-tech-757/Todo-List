@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/style.css" />
+    <script src="asset/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">FoodCook | Planner 😎</div>
+      <div class="details">
+        <h4><a href="./feedback.html">FeedBack</a></h4>
+        <h4>Contact Us</h4>
+      </div>
+    </header>
+    <section>
+      <div class="input-order">
+        <input type="text" placeholder="Grab Something | 😁" />
+        <button type="button" id="get-food">Save</button>
+        <button type="button" onclick="deltAll(event)">Clear All</button>
+      </div>
+
+      <div class="receive-list">
+        <div class="receive-order" id="receive-order">
+          <!-- <h3>Saved Dish Listed Below  ⏬</h3> -->
+          <div id="remove-ui">
+            <h3><span id="nameGreet"></span></h3>
+          </div>
+          <div>
+            <ul id="update-food"></ul>
+          </div>
+        </div>
+        <form>
+          <div>
+            <input type="text" placeholder="FullName" />
+          </div>
+          <div>
+            <label for="terms" style="font-size: 10px">
+              <input type="checkbox" id="terms" />I accept the<a href=""
+                >Terms and Conditions</a
+              >
+            </label>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
